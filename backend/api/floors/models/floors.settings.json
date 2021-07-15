@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "floors",
+  "info": {
+    "name": "floors"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "areas": {
+      "collection": "areas"
+    }
+  }
+}

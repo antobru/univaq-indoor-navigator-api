@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points_of_interests",
+  "info": {
+    "name": "Points of interest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "area": {
+      "model": "areas"
+    }
+  }
+}

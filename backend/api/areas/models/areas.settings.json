@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "name": "areas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "paths": {
+      "type": "component",
+      "repeatable": true,
+      "component": "geo.coordinate"
+    },
+    "fill": {
+      "type": "string"
+    },
+    "stroke": {
+      "type": "string"
+    },
+    "beacons": {
+      "via": "area",
+      "collection": "beacons"
+    }
+  }
+}

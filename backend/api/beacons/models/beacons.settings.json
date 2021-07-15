@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beacons",
+  "info": {
+    "name": "beacons",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "string"
+    },
+    "coordinate": {
+      "type": "component",
+      "repeatable": false,
+      "component": "geo.coordinate"
+    },
+    "note": {
+      "type": "string"
+    },
+    "area": {
+      "via": "beacons",
+      "model": "areas"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buildings",
+  "info": {
+    "name": "buildings",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "center": {
+      "type": "component",
+      "repeatable": false,
+      "component": "geo.coordinate"
+    },
+    "floors": {
+      "collection": "floors"
+    },
+    "zoom": {
+      "type": "integer"
+    },
+    "minZoom": {
+      "type": "integer"
+    },
+    "maxZoom": {
+      "type": "integer"
+    },
+    "geojson": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

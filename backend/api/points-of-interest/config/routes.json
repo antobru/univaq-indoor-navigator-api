@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/points-of-interests",
+      "handler": "points-of-interest.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/points-of-interests/count",
+      "handler": "points-of-interest.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/points-of-interests/:id",
+      "handler": "points-of-interest.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/points-of-interests",
+      "handler": "points-of-interest.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/points-of-interests/:id",
+      "handler": "points-of-interest.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/points-of-interests/:id",
+      "handler": "points-of-interest.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
